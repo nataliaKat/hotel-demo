@@ -1,0 +1,31 @@
+nav {
+}
+
+.custom-background {
+    background-image: url(../images/imageedit_1_8125140389.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.custom-nav {
+    font-size: larger;   
+}
+
+.custom-nav li {
+    margin-right: 30px;
+}
+
+.my-button {
+    width: 30%;
+    height: 50px;
+    border-radius: 7px;
+    background-color: tomato;
+    border: none;
+    color:white;
+}
+
+.my-button:hover {
+    background-color: darkred;
+    transition: 0.3s;
+}
