@@ -1,7 +1,7 @@
-
+/* 
 nav {
     margin-bottom: 100px;
-}
+} */
 
 .custom-background {
     background-image: url(../images/imageedit_1_8125140389.png);
@@ -15,7 +15,7 @@ nav {
 }
 
 .custom-nav li {
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .my-button {
@@ -36,13 +36,17 @@ button:focus {
 }
 
 .card-background {
-    background-color: #fa4659;
+    background-color: #631818b5;
 
 }
 
-#cards {
+.cards {
     margin-left: 30px;
     color: white;
+}
+
+.cards .col-sm-6 {
+    margin-bottom: 30px;
 }
 
 
@@ -56,16 +60,18 @@ html {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
   }
+
   .footer {
+    margin-top: 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
+    /* height: 60px; */
     line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+    background-color: #b1dea0;
   }
-  
+
   
   /* Custom page CSS
   -------------------------------------------------- */
@@ -75,9 +81,6 @@ html {
     padding: 60px 15px 0;
   }
   
-  .footer {
-      background-color: #b1dea0;
-  }
   
   .footer > .container {
     padding-right: 15px;
