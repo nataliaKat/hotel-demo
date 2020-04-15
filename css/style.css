@@ -1,4 +1,6 @@
+
 nav {
+    margin-bottom: 100px;
 }
 
 .custom-background {
@@ -17,15 +19,71 @@ nav {
 }
 
 .my-button {
-    width: 30%;
     height: 50px;
     border-radius: 7px;
-    background-color: tomato;
+    background-color: #42cf68;
     border: none;
     color:white;
 }
 
+button:focus { 
+    outline: thin;
+}
+
 .my-button:hover {
-    background-color: darkred;
+    background-color: #34a352;
     transition: 0.3s;
 }
+
+.card-background {
+    background-color: #fa4659;
+
+}
+
+#cards {
+    margin-left: 30px;
+    color: white;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+  }
+  
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  body > .container {
+    padding: 60px 15px 0;
+  }
+  
+  .footer {
+      background-color: #b1dea0;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
