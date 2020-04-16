@@ -3,6 +3,10 @@ nav {
     margin-bottom: 100px;
 } */
 
+.logo {
+    width: 180px;
+}
+
 .custom-background {
     background-image: url(../images/imageedit_1_8125140389.png);
     background-repeat: no-repeat;
@@ -11,17 +15,14 @@ nav {
 }
 
 .custom-nav {
-    font-size: larger;   
+    font-size: larger;
 }
 
-.custom-nav li {
-    margin-left: 30px;
-}
 
 .my-button {
     height: 50px;
     border-radius: 7px;
-    background-color: #42cf68;
+    background-color: #34a352;
     border: none;
     color:white;
 }
@@ -31,17 +32,15 @@ button:focus {
 }
 
 .my-button:hover {
-    background-color: #34a352;
+    background-color: #328c4b;
     transition: 0.3s;
 }
 
 .card-background {
     background-color: #631818b5;
-
 }
 
 .cards {
-    margin-left: 30px;
     color: white;
 }
 
@@ -67,7 +66,7 @@ html {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    /* height: 60px; */
+    height: 60px;
     line-height: 60px; /* Vertically center the text there */
     background-color: #b1dea0;
   }
