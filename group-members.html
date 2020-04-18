@@ -93,7 +93,8 @@ i        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9J
                     <div class="form-group">
                         <label for="room" class="control-label">Αριθμός Δωματίου</label>
                         <div class="col-sm-10">
-                            <input type="number" id="room" name="cust_room" class="form-control" placeholder="αριθμός">
+                            <input type="number" id="room" name="cust_room" min="101" max="709" class="form-control"
+                                placeholder="αριθμός" required>
                         </div>
                     </div>
 
@@ -109,40 +110,54 @@ i        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9J
             </div>
             <!-- Table -->
             <div class="col-xs-12 col-lg-8">
-                <div class="table-responsive table-striped">
-                    <table id="my-table" class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Όνομα</th>
-                                <th scope="col">Επώνυμο</th>
-                                <th scope="col">Ταυτότητα / Διαβατήριο</th>
-                                <th scope="col">Τηλέφωνο</th>
-                                <th scope="col">email</th>
-                                <th scope="col">Δωμάτιο</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr> -->
-                        </tbody>
-                    </table>
+                <div class="row">
+                    <div class="table-responsive table-striped table-sm">
+                        <table id="my-table" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Όνομα</th>
+                                    <th scope="col">Επώνυμο</th>
+                                    <th scope="col">Ταυτότητα / Διαβατήριο</th>
+                                    <th scope="col">Τηλέφωνο</th>
+                                    <th scope="col">email</th>
+                                    <th scope="col">Δωμάτιο</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="cust-submit" class="row">
+                    <button class="btn btn-secondary" style="border-radius: 7px; margin-left: 3px;">Πίσω</button>
+                    <!-- Button trigger modal -->
+                    <button  type="button" class="my-button" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Υποβολή Κράτησης
+                </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Επιβεβαίωση</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Θέλετε να υποβάλετε οριστικά την κράτηση;
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ακύρωση</button>
+                                <button type="button" class="btn btn-success" onclick="sendJSON()">Ναι</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

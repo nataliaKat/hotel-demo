@@ -18,11 +18,26 @@ nav {
     font-size: larger;
 }
 
+#my-table{
+  overflow-y:scroll;
+  height:500px;
+  display:block;
+}
+
+#my-table th {
+  text-align: center;
+}
+
+#cust-submit{
+  width: 100%;
+  flex-direction: row-reverse; 
+  margin-bottom: 20px;
+}
 
 .my-button {
     height: 50px;
     border-radius: 7px;
-    background-color: #34a352;
+    background-color: #328c4b;
     border: none;
     color:white;
 }
@@ -32,7 +47,7 @@ button:focus {
 }
 
 .my-button:hover {
-    background-color: #328c4b;
+    background-color: #5c0000;
     transition: 0.3s;
 }
 
