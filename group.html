@@ -1,46 +1,187 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Κράτηση Πρακτορείου</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Orpheus Group Management</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+i        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-  <body>
-  <div>
-  <label><b>Επιλέξτε πρακτορείο:</b>
-  <select name="Πρακτορείο">
-     <option>Πρακτορείο 1</option>
-     <option>Πρακτορείο 2</option>
-     <option>Πρακτορείο 1</option>
-  </select>
-  </label> 
-  
-     <br>
-    <label><b>Αριθμός ατόμων:</b>
-    <input type="text" size="1">
-  </label>
-  
-  <fieldset>
-    <legend><b>Τύπος δωματίου:</b></legend>
-    <label> <b>Μονόκλινο:</b></label>
-    <input type="text" size="1" ><br><br>
-    <label><b>Δίκλινο:</b></label>
-    <input type="text" size="1" ><br><br>
-    <label><b>Τρίκλινο:</b></label>
-    <input type="text" size="1"><br><br>
-    <label><b>Τετράκλινο:</b></label>
-    <input type="text" size="1"><br><br>
-  </fieldset>
-  
-  
-  <b>Σχόλια:</b>
-  <br>
-       <textarea rows="5" cols="50"></textarea>
-  
-  </div>
+<body class="custom-background">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#"><img class="logo" src="images/rsz_logo1.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto custom-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Αρχική<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Κράτηση</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ιστορικό</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ειδοποιήσεις</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ημερολόγιο</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logout" href="#"><i class="fas fa-sign-out-alt"></i> Αποσύνδεση</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        <div class="row">
+            <!-- Form -->
+            <div id="myform" class="col-sm-12 col-lg-4">
+                <form action="https://www.google.com" method="POST" class="form-horizontal">
+                    <div class="form-group">
+						<label for="agency" class="col-sm-2 control-label">Πρακτορείο </label>
+						<div class="col-sm-10">
+							<select id="agency" name="agency_name" class="form-control" required>
+								<option value="">Επιλέξτε πρακτορείο</option>
+								<option value="1">Πρακτορείο 1</option>
+								<option value="2">Πρακτορείο 2</option>
+								<option value="3">Πρακτορείο 3</option>
+								<option value="4">Πρακτορείο 4</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="am" class="col-sm-2 control-label">Άφιξη </label>
+						<div class="col-sm-10">
+							<input type="date" id="arrival" name="arrival_name" class="form-control" placeholder="Άφιξη" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Αναχώρηση </label>
+						<div class="col-sm-10">
+							<input type="date" id="departure" name="departure_name" class="form-control" placeholder="Αναχώρηση" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="surname" class="col-sm-2 control-label">Αριθμός ατόμων</label>
+						<div class="col-sm-10">
+							<input type="number" id="sum" name="sum_name" class="form-control" placeholder="Αριθμός ατόμων" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+                        <fieldset>
+                        <legend>Τιμή ανά τύπο δωματίου:</legend>
+                        <label for="number1" class="col-sm-2 control-label">Μονόκλινο </label>
+						<div class="col-sm-10">
+							<input type="number" id="number1" name="number1_name" class="form-control"  required><br>
+                        </div>
+                        </fieldset>
+					</div>
+					
+					<div class="form-group">
+						<label for="breakfast" class="col-sm-2 control-label">Πρωινό</label>
+							<input type="checkbox" id="breakfast" name="breakfast_name" >	
+					</div>
+					
+
+					
+					
+					<div class="form-group">
+						<label for="phone" class="col-sm-2 control-label">Σχόλια </label>
+						<div class="col-sm-10">
+							
+							<textarea class="form-control" rows="3" maxlength="200" placeholder="Insert any comments here"></textarea>					
+							
+						</div>
+					</div>
+
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button type="submit" class="btn btn-success">Εισαγωγή</button>
+                            <button type="reset" class="btn btn-danger">Καθαρισμός</button>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+    
+                <div id="cust-submit" class="row">
+                    <button class="btn btn-secondary" style="border-radius: 7px; margin-left: 3px;">Πίσω</button>
+                    <!-- Button trigger modal -->
+                    <button  type="button" class="my-button" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Υποβολή Κράτησης
+                </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Επιβεβαίωση</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Θέλετε να υποβάλετε οριστικά την κράτηση;
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ακύρωση</button>
+                                <button type="button" class="btn btn-success" onclick="sendJSON()">Ναι</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">ΟΡΦΕΥΣ Α.Ε.- Σύστημα Ομαδικών Κρατήσεων</span>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- jQuery script -->
+    <script src="js/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
+~
+
