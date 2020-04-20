@@ -30,13 +30,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto custom-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Αρχική<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Αρχική</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Κράτηση</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Ιστορικό</a>
+                        <a class="nav-link" href="#">Ιστορικό<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ειδοποιήσεις</a>
@@ -68,7 +68,7 @@
            <label class="control-label " for="date">
             Date
            </label>
-           <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+           <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="date"/>
           </div>
           <div class="form-group">
            <div>
@@ -91,51 +91,55 @@
         <option>wraia komotini</option>
     </select>
     <hr>
-            <!-- Table -->
-            <caption>Λίστα Κρατήσεων</caption>
-            <div class="col-xs-12 col-lg-8">
-                <div class="row">
-                    <div class="table-responsive table-striped table-sm">
-                        <table id="my-table" class="table table-hover table-striped table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Ημερομηνία Κράτησης</th>
-                                </tr>
+    <!-- Table -->
+    <caption>Λίστα Κρατήσεων</caption>
+        <div class="col-xs-12 col-lg-8">
+            <div class="row">
+                <div class="table-responsive table-striped">
+                    <table id="my-table" width="400" class="table table-hover table-striped table-bordered" style="text-align: center;">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Ημερομηνία Κράτησης</th>
+                            </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>17/04/2020</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">2</th>
                                     <td>13/04/2020</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">3</th>
                                     <td>05/04/2020</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">4</th>
                                     <td>01/04/2020</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">5</th>
                                     <td>25/03/2020</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">6</th>
                                     <td>10/03/2020</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">7</th>
                                     <td>02/03/2020</td>
-                                  </tr>
-                                  <tr>
+                                </tr>
+                                <tr>
                                     <th scope="row">8</th>
                                     <td>15/02/2020</td>
-                                  </tr>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>12/02/2020</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -143,7 +147,7 @@
                 <div id="cust-submit" class="row">
                     <button class="btn btn-secondary" style="border-radius: 7px; margin-left: 3px;">Πίσω</button>
                     <!-- Button trigger modal -->
-                    <input type="button" id="mybutton" value="Προβολή Φορμών Πρακτορείου">
+                    <input type="button" id="mybutton" value="Προβολή Φορμών Πρακτορείου" style="margin-left: 150px;">
                 </div>
             </div>
         </div>
@@ -168,4 +172,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html> 
+</html>
