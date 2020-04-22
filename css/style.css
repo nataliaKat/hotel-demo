@@ -35,6 +35,7 @@ nav {
 }
 
 .my-button {
+  text-decoration: none;
     height: 50px;
     border-radius: 7px;
     background-color: #328c4b;
