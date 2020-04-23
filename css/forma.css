@@ -1,8 +1,8 @@
 body
 {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* font-family: Arial, Helvetica, sans-serif; */
     justify-content: center;
     /* background-color: #631818b5; */
 }
@@ -26,37 +26,44 @@ body
 {
     position: relative;
     width: 80px;
-    height: 300px;
+    /* height: 300px; */
     margin: 0 auto;
     text-align: center;
     font-size: 32px;
     line-height: 110px;
     color: black; 
 }
-.container .page-header h1
+/* .container .page-header h1
 {
    text-align: center;
    color: black;
    text-transform: none;
    position: relative;
-   /* bottom: 1000px;
+   bottom: 1000px;
    left: 80px;
    top: -100px;
-   width: 1000px; */
-}
+   width: 1000px;
+} */
 
-.container .box h2
+.container .box h5
 {
    text-align: center;
    text-transform: none;
-   padding-left: 15%;
+   /* padding-left: 15%; */
    color: black;
    text-shadow: 1px 1px;
-   width: 200px
+   /* width: 200px */
 }
 .container .box canvas
 {
     position: relative;
     top: 0;
     left: 0;
+}
+
+#back-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: row-reverse;
+
 }
