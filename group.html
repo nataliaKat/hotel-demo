@@ -56,162 +56,162 @@
         <div class="row">
             <!-- Form -->
             <div id="myform" class="col-xs-12 col-md-10 col-lg-8">
-
-                <div class="form-group">
-                    <label for="agency" class="col-sm-2 control-label">Πρακτορείο </label>
-                    <div class="col-sm-10">
-                        <select id="agency" name="agency_name" class="form-control" required>
-                            <option value="">Επιλέξτε πρακτορείο</option>
-                            <option value="1">Πρακτορείο 1</option>
-                            <option value="2">Πρακτορείο 2</option>
-                            <option value="3">Πρακτορείο 3</option>
-                            <option value="4">Πρακτορείο 4</option>
-                        </select>
+                <form action="submit.php" method="POST" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="agency" class="col-sm-2 control-label">Πρακτορείο </label>
+                        <div class="col-sm-10">
+                            <select id="agency" name="agency_name" class="form-control" required>
+                                <option value="">Επιλέξτε πρακτορείο</option>
+                                <option value="1">Πρακτορείο 1</option>
+                                <option value="2">Πρακτορείο 2</option>
+                                <option value="3">Πρακτορείο 3</option>
+                                <option value="4">Πρακτορείο 4</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="arrival" class="col-sm-2 control-label">Άφιξη </label>
-                    <div class="col-sm-10">
-                        <input type="date" id="arrival" name="arrival_name" class="form-control" required>
+                    <div class="form-group">
+                        <label for="arrival" class="col-sm-2 control-label">Άφιξη </label>
+                        <div class="col-sm-10">
+                            <input type="date" id="arrival" name="arrival_name" class="form-control" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="time1" class="col-sm-2 control-label"> Ώρα Άφιξης </label>
-                    <div class="col-sm-10">
-                        <input type="time" id="time1" name="time1_name" class="form-control" required>
+                    <div class="form-group">
+                        <label for="time1" class="col-sm-2 control-label"> Ώρα Άφιξης </label>
+                        <div class="col-sm-10">
+                            <input type="time" id="time1" name="time1_name" class="form-control" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="departure" class="col-sm-2 control-label">Αναχώρηση </label>
-                    <div class="col-sm-10">
-                        <input type="date" id="departure" name="departure_name" class="form-control" required>
+                    <div class="form-group">
+                        <label for="departure" class="col-sm-2 control-label">Αναχώρηση </label>
+                        <div class="col-sm-10">
+                            <input type="date" id="departure" name="departure_name" class="form-control" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="time2" class="col-sm-4 control-label"> Ώρα Αναχώρησης </label>
-                    <div class="col-sm-10">
-                        <input type="time" id="time2" name="time2_name" class="form-control" required>
+                    <div class="form-group">
+                        <label for="time2" class="col-sm-4 control-label"> Ώρα Αναχώρησης </label>
+                        <div class="col-sm-10">
+                            <input type="time" id="time2" name="time2_name" class="form-control" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="sum" class="col-sm-4 control-label">Αριθμός ατόμων</label>
-                    <div class="col-sm-3">
-                        <input type="number" min="0" id="sum" name="sum_name" class="form-control" required>
+                    <div class="form-group">
+                        <label for="sum" class="col-sm-4 control-label">Αριθμός ατόμων</label>
+                        <div class="col-sm-3">
+                            <input type="number" min="0" id="sum" name="sum_name" class="form-control" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class=" form-group">
+                    <div class=" form-group">
 
-                    <div class="col-xs-12 col-lg-8">
-                        <div class="row">
-                            <div class="table-responsive table-striped" style="overflow-x: visible;">
-                                <table class="table table-hover table-striped table-bordered ml-3"
-                                    style="text-align: center;">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Τύπος Δωματίου</th>
-                                            <th scope="col">Τιμή Δωματίου</th>
-                                            <th scope="col">Αριθμός Δωματίων</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
+                        <div class="col-xs-12 col-lg-8">
+                            <div class="row">
+                                <div class="table-responsive table-striped" style="overflow-x: visible;">
+                                    <table class="table table-hover table-striped table-bordered ml-3"
+                                        style="text-align: center;">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Τύπος Δωματίου</th>
+                                                <th scope="col">Τιμή Δωματίου</th>
+                                                <th scope="col">Αριθμός Δωματίων</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
 
-                                            <td>Μονόκλινο</td>
-                                            <td>
+                                                <td>Μονόκλινο</td>
+                                                <td>
 
-                                                <input min="0" name="p-1" id="p-1" type="number" size="1">
+                                                    <input min="0" name="p-1" id="p-1" type="number" size="1">
 
-                                            </td>
-                                            <td>
+                                                </td>
+                                                <td>
 
-                                                <input min="0" name="n-1" id="n-1" type="number" size="1">
+                                                    <input min="0" name="n-1" id="n-1" type="number" size="1">
 
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                                </td>
+                                            </tr>
+                                            <tr>
 
-                                            <td>Δίκλινο</td>
-                                            <td>
+                                                <td>Δίκλινο</td>
+                                                <td>
 
-                                                <input name="p-2" id="p-2" type="number" size="1" min="0">
+                                                    <input name="p-2" id="p-2" type="number" size="1" min="0">
 
-                                            </td>
-                                            <td>
+                                                </td>
+                                                <td>
 
-                                                <input name="n-2" id="n-2" type="number" size="1" min="0">
+                                                    <input name="n-2" id="n-2" type="number" size="1" min="0">
 
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                                </td>
+                                            </tr>
+                                            <tr>
 
-                                            <td>Τρίκλινο</td>
-                                            <td>
+                                                <td>Τρίκλινο</td>
+                                                <td>
 
-                                                <input name="p-3" id="p-3" type="number" size="1" min="0">
+                                                    <input name="p-3" id="p-3" type="number" size="1" min="0">
 
-                                            </td>
-                                            <td>
+                                                </td>
+                                                <td>
 
-                                                <input name="n-3" id="n-3" type="number" size="1" min="0">
+                                                    <input name="n-3" id="n-3" type="number" size="1" min="0">
 
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                                </td>
+                                            </tr>
+                                            <tr>
 
-                                            <td>Τετράκλινο</td>
-                                            <td>
+                                                <td>Τετράκλινο</td>
+                                                <td>
 
-                                                <input name="p-4" id="p-4" type="number" size="1" min="0">
+                                                    <input name="p-4" id="p-4" type="number" size="1" min="0">
 
-                                            </td>
-                                            <td>
+                                                </td>
+                                                <td>
 
-                                                <input name="n-4" id="n-4" type="number" size="1" min="0">
+                                                    <input name="n-4" id="n-4" type="number" size="1" min="0">
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="form-group checkbox">
+                            <label class="col-sm-2 control-label">Πρωινό </label>
+                            <input type="checkbox" value="">
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Σχόλια </label>
+                            <div class="col-sm-10">
+
+                                <textarea class="form-control" rows="3" maxlength="200"
+                                    placeholder="Insert any comments here"></textarea>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <button type="submit" class="btn btn-success">Εισαγωγή</button>
+                                <button type="reset" class="btn btn-danger">Καθαρισμός</button>
+
                             </div>
                         </div>
 
                     </div>
-                    <br>
-                    <div class="form-group checkbox">
-                        <label class="col-sm-2 control-label">Πρωινό </label>
-                        <input type="checkbox" value="">
-
-                    </div>
-
-
-
-
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Σχόλια </label>
-                        <div class="col-sm-10">
-
-                            <textarea class="form-control" rows="3" maxlength="200"
-                                placeholder="Insert any comments here"></textarea>
-
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-10 col-sm-offset-2">
-                            <button type="submit" class="btn btn-success">Εισαγωγή</button>
-                            <button type="reset" class="btn btn-danger">Καθαρισμός</button>
-
-                        </div>
-                    </div>
-
-
-                </div>
+                </form>
 
                 <div id="cust-submit" class="row">
                     <button class="btn btn-secondary" style="border-radius: 7px; margin-left: 3px;">Πίσω</button>
@@ -237,7 +237,6 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <!-- jQuery script -->
-    <script src="js/script.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
