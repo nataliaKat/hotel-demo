@@ -24,6 +24,10 @@ nav {
   display:block;
 }
 
+#my-table td {
+  text-align: right;
+}
+
 #my-table th {
   text-align: center;
 }
