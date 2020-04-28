@@ -29,11 +29,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto custom-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Αρχική<span class="sr-only">(current)</span></a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="group.html">Κράτηση</a>
+                        <a class="nav-link" href="index.html">Αρχική</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="group.html">Κράτηση<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="istoriko.html">Ιστορικό</a>
@@ -52,11 +52,11 @@
         </nav>
     </header>
     <!-- Begin page content -->
-    <main class="container">
+    <main class="container-fluid">
         <div class="row">
             <!-- Form -->
-            <div id="myform" class="col-sm-12 col-lg-4">
-                <form action="https://www.google.com" method="POST" class="form-horizontal">
+            <div id="myform" class="col-sm-12 col-lg-4 ml-5">
+                <form action="submit.php" method="POST" class="form-horizontal">
                     <div class="form-group">
                         <label for="name" class="control-label">Όνομα </label>
                         <div class="col-sm-10">
@@ -109,7 +109,7 @@
                 </form>
             </div>
             <!-- Table -->
-            <div class="col-xs-12 col-lg-8">
+            <div class="col-xs-12 col-lg-7">
                 <div class="row">
                     <div class="table-responsive table-striped table-sm">
                         <table id="my-table" class="table">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div id="cust-submit" class="row">
-                    <button class="btn btn-secondary" style="border-radius: 7px; margin-left: 3px;">Πίσω</button>
+                    <button class="btn btn-secondary" onclick="location.href='group.html'" style="border-radius: 7px; margin-left: 3px;">Πίσω</button>
                     <!-- Button trigger modal -->
                     <button type="button" class="my-button" data-toggle="modal" data-target="#exampleModal">
                         Υποβολή Κράτησης

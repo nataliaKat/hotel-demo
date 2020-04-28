@@ -18,6 +18,10 @@ $(document).ready(function() {
         for (key in customer) {
             content += `<td>${customer[key]}</td>`            
         }
+        content += `<td>
+                        <button type="button" class="btn btn-secondary"><i class="fas fa-edit fa-xs"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt fa-xs"></i></button>    
+                    </td>`
         content += "</tr>" 
         $('#my-table tr:last').after(content);
         customers.push(customer)
