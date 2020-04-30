@@ -8,6 +8,7 @@ This is a demo for 2 modules of our project as part of a group reservations mana
 * HTML
 * CSS
 * JavaScript & jQuery
+* Bootstrap
 ## Preview
 https://detfolio.dmst.aueb.gr/students2018/apantazopoulou/inetpub/hotel-demo/
 ## Authors
